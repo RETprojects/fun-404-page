@@ -1,0 +1,132 @@
+* {
+  padding: 0;
+  margin: 0;
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.container {
+  min-width: 1200px;
+}
+
+.sorrylink a {
+  text-decoration: none;
+  color: white;
+}
+
+.large {
+  color: #e64a46;
+  font-size: 300px;
+  font-family: "Erica One", cursive;
+  z-index: 20;
+  position: absolute;
+  top: 1px;
+  left: 50px;
+}
+
+.visual {
+  z-index: 1;
+  position: absolute;
+  object-fit: fill;
+  size: 100%;
+}
+
+.you {
+  top: 300px;
+  left: 10%;
+  font-size: 150px;
+  font-family: "Erica One", cursive;
+  color: white;
+  z-index: 5;
+  position: absolute;
+
+  animation-name: you;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate-reverse;
+}
+
+.are {
+  top: 300px;
+  left: 38%;
+  font-size: 150px;
+  font-family: "Erica One", cursive;
+  color: white;
+  z-index: 5;
+  position: absolute;
+
+  animation-name: are;
+  animation-duration: 7s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate-reverse;
+}
+
+.lost {
+  top: 300px;
+  left: 65%;
+  font-size: 150px;
+  font-family: "Erica One", cursive;
+  color: white;
+  z-index: 5;
+  position: absolute;
+
+  animation-name: lost;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate-reverse;
+}
+
+.sorrylink {
+  top: 600px;
+  left: 10%;
+  font-size: 20px;
+  font-family: "Unbounded", cursive;
+  color: #e64a46;
+  z-index: 5;
+  position: absolute;
+}
+
+@keyframes you {
+  from {
+    top: 300px;
+    left: 10%;
+    z-index: 18;
+  }
+  to {
+    transform: scale(1.1);
+    transition-timing-function: ease-in-out;
+    animation-direction: alternate-reverse;
+    top: 350px;
+    z-index: 30;
+  }
+}
+
+@keyframes are {
+  from {
+    top: 300px;
+    left: 38%;
+    z-index: 18;
+  }
+  to {
+    transform: scale(1.2);
+    transition-timing-function: ease-in-out;
+    animation-direction: alternate-reverse;
+    top: 350px;
+    z-index: 30;
+  }
+}
+
+@keyframes lost {
+  from {
+    top: 300px;
+    left: 65%;
+    z-index: 18;
+  }
+  to {
+    transform: scale(1.1);
+    transition-timing-function: ease-in-out;
+    animation-direction: alternate-reverse;
+    top: 350px;
+    z-index: 30;
+  }
+}
